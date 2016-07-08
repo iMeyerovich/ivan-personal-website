@@ -1,68 +1,94 @@
+/* Background Image */
+/* TODO, implement blur effect */
 .bgImg {
-	position: absolute;
-	display: block;
-	
-	width: 100vw;
-	height: 100vh;
-
 	background-image: url("../resources/img/antaresLaunch16x9.png");
 	background-position: center;
 	background-size: cover;
+	display: block;
+	height: 100vh;
+	position: absolute;
+	width: 100vw;
 }
 
+
+/* Universal */
 html, body {
 	height: 100vh;
   	width: 100vw;
 }
 
 body {
-	background-color: #354957;
+	background-color: #888888;
 	overflow: hidden;
+}
+
+h1 {
+	color: #080808;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 200%;
+	text-shadow: -2px -4px 5px #3C3C3D;
+}
+
+p {
+	color: #080808;
+	font-family: "Arial", Helvetica, sans-serif;
 }
 
 .wrapper {
 	display: block;
+	height: 100vh;
   	position: absolute;
-  	height: 100vh;
   	width: 100vw;
 }
 
+
+/* Index fade in */
 #header {
-	margin: 5vh auto -30px auto;
+	display: block;
+	margin: 5vh auto -10px auto;
+	opacity: 0.2;
 	text-align: center;
-	font-family: 'Bungee', cursive;
-	color: #121212;
-	opacity: 0.1;
+	-webkit-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
 
-img {
-	margin: auto;
-	display: none;
+#main {
+	display: block;
+	opacity: 0.0;
+	text-align: center;
+	-webkit-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#main img {
 	border-radius: 30px;
+	box-shadow: -4px -3px 5px #3C3C3D;
+	display: block;
+	height: 150px; 
+	margin: auto;
     width: 150px;
-    height: 150px; 
-    box-shadow: 0px 5px 5px #3C3C3D;
 }
 
-#main{
-	
+#main p {
+	font-weight: bold;
+	font-size: 75%;
+	margin-top: 10px;
+	text-shadow: -5px -2px 5px #3C3C3D;
 }
 
-ul.menu {
-    text-align: center;
-}
-ul.menu li {
-    display:inline;
+[class^="fa-"], [class*=" fa-"] {
+	color: #080808;
+	display: inline-block;
+	margin-top: 10px;
+    width: 100%;
+    text-shadow: -3px 1px 5px #3C3C3D;
 }
 
 .activate{
-	margin: auto;
-	height: 90vh;
-	width: 35vw;
+	height: 70vh;
+	margin: auto auto auto 5vw;
+	width: 30vw;
 }
-.activate:hover > #header, #main {
+.activate:hover #header, .activate:hover img, .activate:hover #main{
 	opacity: 1.0;
-}
-.activate:hover + img{
-	display: block;
 }
