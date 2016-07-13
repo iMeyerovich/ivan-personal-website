@@ -1,5 +1,5 @@
-/* Background Image */
-.bgImg {
+/* Background Image w/ Fadeout*/
+#bgImg {
 	background-image: url("../resources/img/antaresLaunch16x9.png");
 	background-position: center;
 	background-size: cover;
@@ -31,7 +31,7 @@ p {
 	font-family: "Arial", Helvetica, sans-serif;
 }
 
-.wrapper {
+#wrapper {
 	display: block;
 	height: 100vh;
   	position: absolute;
@@ -69,25 +69,25 @@ p {
 
 #main p {
 	font-weight: bold;
-	font-size: 90%;
+	font-size: 100%;
 	margin-top: 10px;
-	text-shadow: -5px -2px 6px #3C3C3D;
+	text-shadow: -2px -1px 6px #3C3C3D;
 }
 
 [class^="fa-"], [class*=" fa-"] {
 	color: #080808;
 	display: inline-block;
-	margin-top: 10px;
+	margin-top: 3%;
     width: 100%;
     text-shadow: -3px 1px 5px #3C3C3D;
 }
 
-.activate{
+#activate{
 	height: 80vh;
-	margin: auto auto auto 5vw;
+	margin: auto;
 	width: 30vw;
 }
-.activate:hover #header, .activate:hover #main{
+#activate:hover #header, #activate:hover #main{
 	-webkit-opacity: 1.0;
 	opacity: 1.0;
 }

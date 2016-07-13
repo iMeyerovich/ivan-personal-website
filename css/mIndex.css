@@ -1,0 +1,38 @@
+@media (max-width: 600px) {
+  #imgBlur {
+  	-webkit-filter: blur(5px);
+ 	  filter: blur(5px);
+    -webkit-opacity: 0.6;
+    opacity: 0.6;
+  }
+
+  #main {
+    display: block;
+    margin: 0 auto;
+    opacity: 1;
+    text-align: center;
+  }
+
+  #main p {
+  	font-size: 150%;
+  }
+
+  #main a {
+  	font-size: 120%;
+  }
+
+  .fa {
+  	margin: 1% 0;
+  }
+
+  #header {
+  	opacity: 1;
+  	margin-top: 10vh;
+  	margin-bottom: 5vh;
+  }
+
+  #activate { 
+  	margin: 0;
+  	width: 100vw;
+  }
+}
