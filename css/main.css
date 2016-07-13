@@ -106,3 +106,35 @@ p {
 .activate:hover #header, .activate:hover img, .activate:hover #main{
 	opacity: 1.0;
 }
+
+@media (max-width: 500px) {
+  #main {
+    display: block;
+    margin: 0 auto;
+    opacity: 1;
+    text-align: center;
+  }
+
+  #main p {
+  	font-size: 150%;
+  }
+
+  #main a {
+  	font-size: 120%;
+  }
+
+  .fa {
+  	margin: 3% 0;
+  }
+
+  #header {
+  	opacity: 1;
+  	margin-top: 10vh;
+  	margin-bottom: 5vh;
+  }
+
+  .activate { 
+  	margin: 0;
+  	width: 100vw;
+	}
+}
