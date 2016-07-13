@@ -1,5 +1,4 @@
 /* Background Image */
-/* TODO, implement blur effect */
 .bgImg {
 	background-image: url("../resources/img/antaresLaunch16x9.png");
 	background-position: center;
@@ -10,8 +9,6 @@
 	width: 100vw;
 }
 
-
-/* Universal */
 html, body {
 	height: 100vh;
   	width: 100vw;
@@ -26,7 +23,7 @@ h1 {
 	color: #080808;
 	font-family: 'Orbitron', sans-serif;
 	font-size: 200%;
-	text-shadow: -2px -4px 5px #3C3C3D;
+	text-shadow: -2px -4px 6px #3C3C3D;
 }
 
 p {
@@ -41,11 +38,11 @@ p {
   	width: 100vw;
 }
 
-
 /* Index fade in */
 #header {
 	display: block;
 	margin: 5vh auto -10px auto;
+	-webkit-opacity: 0.2;
 	opacity: 0.2;
 	text-align: center;
 	-webkit-transition: opacity 0.5s ease-in-out;
@@ -54,6 +51,7 @@ p {
 
 #main {
 	display: block;
+	-webkit-opacity: 0.0;
 	opacity: 0.0;
 	text-align: center;
 	-webkit-transition: opacity 0.5s ease-in-out;
@@ -71,9 +69,9 @@ p {
 
 #main p {
 	font-weight: bold;
-	font-size: 75%;
+	font-size: 90%;
 	margin-top: 10px;
-	text-shadow: -5px -2px 5px #3C3C3D;
+	text-shadow: -5px -2px 6px #3C3C3D;
 }
 
 [class^="fa-"], [class*=" fa-"] {
@@ -85,10 +83,11 @@ p {
 }
 
 .activate{
-	height: 70vh;
+	height: 80vh;
 	margin: auto auto auto 5vw;
 	width: 30vw;
 }
-.activate:hover #header, .activate:hover img, .activate:hover #main{
+.activate:hover #header, .activate:hover #main{
+	-webkit-opacity: 1.0;
 	opacity: 1.0;
 }
