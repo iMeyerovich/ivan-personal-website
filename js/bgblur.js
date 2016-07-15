@@ -1,3 +1,5 @@
+/* Derived from https://gist.github.com/jakealbaugh/0febbd586d0dca22411a */
+
 (function () {
     var $blur_layer, $image_layer, blur_fade, blur_throttle, center_x, 
     fade_length, max_blur, min_opacity, mouse_move_handler, win_w;
@@ -33,7 +35,6 @@
             }
 
             mouse_x = event.clientX;
-            mouse_y = event.clientY;
             mouse_move_handler(mouse_x);
         }, false);
     }
