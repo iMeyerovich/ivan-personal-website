@@ -26,7 +26,7 @@
         return blur_fade($blur_layer, blur_px, fade_i);
     };
     
-    if (win_w > 600) {
+    if (win_w > 800) {
         document.addEventListener('mousemove', function (event) {
             var mouse_x;
         
