@@ -52,8 +52,6 @@
   #activate { 
   	margin: 0;
   	width: 100vw;
-  }
-  .sig {
-  width: 20vw;
+    min-width: 200px
   }
 }
