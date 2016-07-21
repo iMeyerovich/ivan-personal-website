@@ -125,3 +125,11 @@ p {
 .nav a:hover b {
     opacity: 1.0;
 }
+
+.sig {
+	position: absolute;
+	bottom: 0px; 
+	right: 0px;
+	height: 10vh;
+	width: 10vw;
+}
