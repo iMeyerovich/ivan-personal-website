@@ -2,6 +2,7 @@
 <html lang="en-us">
   <head>
   	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   	<title>iMeyerovich</title>
   	
@@ -11,36 +12,49 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron:700">
     <script src="https://use.fontawesome.com/c003839872.js"></script>
   </head>
+
   <body>  
     <div id="imgBlur">
       <div id="bgImg"></div>
     </div>
     
     <div id="wrapper">
-      <div id="activate">
-        <div id="header">
-          <h1>Ivan Meyerovich</h1>
+      <div class="container-fluid activate">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <h1>Ivan Meyerovich</h1>
+          </div>
         </div>
-        <div id="main">
-          <img src="resources/img/sPro.jpg" alt="Ivan M Photo">
-          <p>Software Developer</p>
-          <div class="nav">
-            <ul>
-              <li class="git">
-                <a href="https://github.com/iMeyerovich"  alt="Ivan M GitHub"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i><b>GitHub</b></a>
-              </li>
-              <li class="res">
-                <a href="resources/pdf/IvanMeyerovichRes.pdf" alt="Ivan M Resume"><i class="fa fa-file-text fa-4x" aria-hidden="true"></i><b>Resume</b></a>
-              </li>
-              <li class="link">
-                <a href="https://www.linkedin.com/in/imeyerovich" alt="Ivan M LinkedIn"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i><b>LinkedIn</b></a>
-              </li>
-            </ul>
+        <div class="main">
+          <div class="row">
+            <div class="col-xs-12 image">
+              <img class="center-block img-responsive" src="resources/img/sPro.jpg" alt="Ivan M Photo"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <p>Software Developer</p>
+            </div>
+          </div>
+          <div class="row nav">
+            <div class="col-xs-6 col-sm-12 git">
+              <a href="https://github.com/iMeyerovich"  alt="Ivan M GitHub"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i><b>GitHub</b></a>
+            </div>
+            <div class="col-xs-6 col-sm-12 res">
+              <a href="resources/pdf/IvanMeyerovichRes.pdf" alt="Ivan M Resume"><i class="fa fa-file-text fa-4x" aria-hidden="true"></i><b>Resume</b></a>
+            </div>
+          </div>
+          <div class="row nav">
+            <div class="col-xs-12 link">
+              <a href="https://www.linkedin.com/in/imeyerovich" alt="Ivan M LinkedIn"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i><b>LinkedIn</b></a>
+            </div>
           </div>
         </div>
       </div>
       <img class="sig" src="resources/img/Sig.png" alt="Ivan M Signature">
     </div>
     <script type="text/javascript" src="js/bgblur.js"></script>
+    <script src="js/jquery-3.0.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

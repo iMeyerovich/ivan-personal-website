@@ -39,7 +39,26 @@ p {
 }
 
 /* Index fade in */
-#header {
+.activate{
+	height: 80vh;
+	margin: auto;
+	min-width: 350px;
+	width: 30vw;
+}
+.main {
+	/*-webkit-opacity: 0.0;
+	opacity: 0.0;*/
+	-webkit-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+.image{
+	height: 20vh;
+}
+.center-block{
+	height: 100%;
+}
+
+/*.header {
 	display: block;
 	margin: 5vh auto -10px auto;
 	-webkit-opacity: 0.2;
@@ -49,7 +68,7 @@ p {
     transition: opacity 0.5s ease-in-out;
 }
 
-#main {
+.main {
 	display: block;
 	-webkit-opacity: 0.0;
 	opacity: 0.0;
@@ -58,14 +77,6 @@ p {
     transition: opacity 0.5s ease-in-out;
 }
 
-#main img {
-	border-radius: 50%;
-	box-shadow: 0px -3px 5px #3C3C3D;
-	display: block;
-	height: 150px; 
-	margin: auto;
-    width: 150px;
-}
 
 #main p {
 	font-weight: bold;
@@ -74,19 +85,13 @@ p {
 	text-shadow: 0px -2px 6px #3C3C3D;
 }
 
-#activate{
-	height: 80vh;
-	margin: auto;
-	min-width: 350px;
-	width: 30vw;
-}
-#activate:hover #header, #activate:hover #main{
+.activate:hover .header, .activate:hover #main{
 	-webkit-opacity: 1.0;
 	opacity: 1.0;
 }
 
 /* Link Names */
-.nav {
+/*.nav {
 	text-align: center;
 }
 .nav ul {
@@ -124,7 +129,7 @@ p {
 }
 .nav a:hover b {
     opacity: 1.0;
-}
+}*/
 
 .sig {
 	position: absolute;
