@@ -55,7 +55,7 @@ h1 {
 .git, .res, .link{
     height: 10vh;
 }
-.res, .link{
+.link{
     margin-top: 6%;
 }
 .nav i{
@@ -89,6 +89,9 @@ h1 {
         -webkit-transition: opacity 0.5s ease-in-out;
         transition: opacity 0.5s ease-in-out;
     }
+    .res{
+        margin-top: 6%;
+    }
     .activate:hover .name, .activate:hover .main{
         -webkit-opacity: 1.0;
         opacity: 1.0;
@@ -102,5 +105,14 @@ h1 {
     .nav a:hover{
         color: #55A87F;
         text-decoration: none;
+    }
+}
+
+@media only screen and (max-device-width: 768px){
+    #imgBlur{
+        -webkit-filter: blur(100);
+        filter: blur(100);
+        -webkit-opacity: 0.6;
+        opacity: 0.6;
     }
 }
