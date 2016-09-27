@@ -1,7 +1,7 @@
 /* Derived from https://gist.github.com/jakealbaugh/0febbd586d0dca22411a */
 
 (function () {
-    var $blur_layer, $image_layer, blur_fade, blur_throttle, center_x, 
+    let $blur_layer, $image_layer, blur_fade, blur_throttle, center_x, 
     fade_length, max_blur, min_opacity, mouse_move_handler, win_w;
 
     blur_fade = function (elem, blur, fade) {
@@ -20,15 +20,15 @@
     $blur_layer = document.getElementById('imgBlur');
     
     mouse_move_handler = function (mouse_x) {
-        var blur_px, fade_i;
+        let blur_px, fade_i;
         blur_px = (1 - Math.abs(mouse_x - center_x) / center_x) * blur_throttle + 'px';
         fade_i = 1 - fade_length * (1 - Math.abs(mouse_x - center_x) / center_x);
         return blur_fade($blur_layer, blur_px, fade_i);
     };
     
-    if (win_w > 800) {
+    if (win_w > 768) {
         document.addEventListener('mousemove', function (event) {
-            var mouse_x;
+            let mouse_x;
         
             if (window.event) {
                 event = window.event;

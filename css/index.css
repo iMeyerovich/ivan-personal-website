@@ -13,6 +13,7 @@ html, body {
 	height: 100vh;
   	width: 100vw;
 	font-family: 'Orbitron', sans-serif !important;
+    font-size: 62.5%;
 	color: #000000 !important;
 }
 
@@ -40,24 +41,9 @@ h1 {
 	min-width: 350px;
 	width: 30vw;
 }
-.name{
-	-webkit-opacity: 0.2;
-	opacity: 0.2;
-	-webkit-transition: opacity 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
-}
-.main {
-	-webkit-opacity: 0.0;
-	opacity: 0.0;
-	-webkit-transition: opacity 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
-}
 .image{
 	height: 30vh;
 	border-radius: 50%;
-}
-.nav{
-	font-size: 175%;
 }
 .main p{
 	font-weight: bold;
@@ -65,84 +51,56 @@ h1 {
 	margin-top: 10px;
 	text-shadow: 0px -2px 6px #3C3C3D; 
 }
+
+.git, .res, .link{
+    height: 10vh;
+}
+.res, .link{
+    margin-top: 6%;
+}
 .nav i{
 	color: #000000;
-	margin-top: 5%;
+    font-size: 7rem;
 	text-shadow: 0px -2px 5px #3C3C3D;
 }
 
-.activate:hover .name, .activate:hover .main{
-	-webkit-opacity: 1.0;
-	opacity: 1.0;
+.vcenter {
+    display: inline-flex;
+    margin-top: 5%;
 }
-
-/*.header {
-	display: block;
-	margin: 5vh auto -10px auto;
-	-webkit-opacity: 0.2;
-	opacity: 0.2;
-	text-align: center;
-	-webkit-transition: opacity 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
-}
-
-
-#main p {
-	font-weight: bold;
-	font-size: 100%;
-	margin-top: 10px;
-	text-shadow: 0px -2px 6px #3C3C3D;
-}
-
-.activate:hover .header, .activate:hover #main{
-	-webkit-opacity: 1.0;
-	opacity: 1.0;
-}
-
-/* Link Names */
-/*.nav {
-	text-align: center;
-}
-.nav ul {
-    list-style: none;
-    display: inline-block;
-    margin: -30px 0 0 0;
-    padding: 0;
-    top: 0;
-    right: 0;
-}
-.nav li {
-	height: 60px;
-	margin-top: 30px;
-}
-.nav li a {
-    font-family: FontAwesome, sans-serif;
-    text-decoration: none;
-    text-shadow: 0px -2px 5px #3C3C3D;
-}
-.nav li i {
-    color: #080808;
-    -webkit-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-}
-.nav li b {
-	color: #F57D18;
-	display: block;
-	opacity: 0.0;
-	padding-top: 2px;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-.nav a:hover i {
-    color: #F57D18;
-}
-.nav a:hover b {
-    opacity: 1.0;
-}*/
 
 .sig {
 	position: absolute;
 	bottom: 0px; 
 	right: 0px;
 	height: 10vh;
+}
+
+@media only screen and (min-device-width: 769px){
+    .name{
+        -webkit-opacity: 0.2;
+        opacity: 0.2;
+        -webkit-transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out;
+    }
+    .main {
+        -webkit-opacity: 0.0;
+        opacity: 0.0;
+        -webkit-transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out;
+    }
+    .activate:hover .name, .activate:hover .main{
+        -webkit-opacity: 1.0;
+        opacity: 1.0;
+    }
+    .nav a{
+        color: #55A87F;
+        font-size: 2.5rem;
+        text-decoration: none;
+        text-shadow: 0px -2px 5px #3C3C3D;
+    }
+    .nav a:hover{
+        color: #55A87F;
+        text-decoration: none;
+    }
 }
